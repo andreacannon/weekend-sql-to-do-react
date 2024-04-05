@@ -9,3 +9,10 @@ root.render(
         <App />
     </React.StrictMode>
 );
+ReactDom.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+        <ThemeProvider theme={newTheme}>
+        <App />
+        </ThemeProvider>
+    </React.StrictMode>
+);
